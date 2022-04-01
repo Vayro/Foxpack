@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID"
+        app:layout_constraintStart_toStartOf="@+id/textViewName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName" />
+
+
+    <ImageView
+        android:id="@+id/mainHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mainHeader">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageViewProfile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                tools:srcCompat="@tools:sample/avatars" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonSignOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Out" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/toSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toScheduleList"
+                android:text="View Schedule" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/toWorkout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="toScheduleWorkout"
+                android:text="Schedule Workout" />
+
+        </TableRow>
+
+      <!--  <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nearby Gyms" />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TableRow> -->
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

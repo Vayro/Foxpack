@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Foxpack</string>
+
+
+    <string-array name="musclegroups_array">
+        <item>Arms</item>
+        <item>Back</item>
+        <item>Shoulder</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">No Scheduled Workouts</string>
+    <string name="logString">No Scheduled Workouts</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

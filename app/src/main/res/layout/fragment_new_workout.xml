@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".newWorkoutFragment">
+
+
+<TableLayout
+    android:id="@+id/tableLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:text="Date" />
+
+        <Button
+            android:id="@+id/selectDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Date" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:text="Time" />
+
+        <Button
+            android:id="@+id/selectTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Time" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Muscle Group" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/checkBoxArms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arms" />
+
+        <CheckBox
+            android:id="@+id/checkBoxCore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Core" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/checkBoxShoulders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shoulders" />
+
+        <CheckBox
+            android:id="@+id/checkBoxBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/checkBoxChest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chest" />
+
+        <CheckBox
+            android:id="@+id/checkBoxLegs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Legs" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/buttonConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm" />
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+    </TableRow>
+</TableLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
